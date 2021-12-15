@@ -14,7 +14,7 @@
             <div class= "d-flex justify-content-between">
               <h2><%=movie.rating%></h2>
               <i class="fas fa-star"></i>
-              <%= link_to bookmark_path(bookmark) do %>
+              <%= link_to bookmark_path(bookmark), method: :delete do %>
                 <i class="far fa-trash-alt delete-icon"></i>
               <% end %>
             </div>
