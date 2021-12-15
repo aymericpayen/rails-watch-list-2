@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Create a new of lists</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, placeholder: 'Drama' %>
+    <%= f.submit class: 'btn btn-success' %>
+  <% end %>
+</div>
